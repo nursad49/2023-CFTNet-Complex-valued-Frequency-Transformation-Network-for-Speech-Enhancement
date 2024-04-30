@@ -7,8 +7,28 @@
  network for speech enhancement, INTERSPEECH, Dublin, Ireland, 2023.
 
 # Architecture
-DCCTN network is four-fold. (1) propose a fully complex-valued deep complex convolution transformer network, DCCTN, that uses a complex audio transformer and complex frequency transformation network (2) complex FTL in the encoder to leverage correlation among harmonics to capture global cor- relations over frequency for more effective T-F representations (3) a complex audio transformer within the bottleneck layer of the network. This transformer offers several advantages: the self-attention mechanism captures long-range relationships in speech by focusing on key input sequence features; its parallel processing capabilities outperform RNNs by enabling simultaneous use of multiple processing units for expedited computation [41]; accurately captures both local and global contexts, and the multi-head attention mechanism improves
-
+The network consists
+of three main components: (i) a fully convolutional complex-
+valued encoder-decoder network (Cplx-UNet), (ii) complex-
+valued SkipBlocks (SB) within the skip connections between
+encoder and decoder, and (iii) complex-valued frequency trans-
+formation modules. The encoder network is designed using a
+series of encoder blocks followed by an FTL module in the al-
+ternate layers until the encoder downsamples to a single pixel.
+This ensures the decoder uses all spectral and temporal features
+learned by the encoder. Each encoder/decoder block is built
+upon complex-valued convolution layers to ensure successive
+enhancement of both magnitude and phase. A complex convo-
+lutional block in the skip connection reduces the semantic gap
+between the encoder and decoder blocks and thus guides the
+decoder to reconstruct the enhanced output. Although U-Net
+can capture contextual correlation for prediction, it yields less
+attention toward harmonic correlation. The proposed CFTNet
+can capture long-range dependencies and correlations among
+harmonics using FTL layers that CNN does not possess due to
+its localized receptive fields. Therefore, CFTNet employs an
+FTL block along with the encoder layer to exploit harmonic
+structures in the frequency components.
 
 
 
