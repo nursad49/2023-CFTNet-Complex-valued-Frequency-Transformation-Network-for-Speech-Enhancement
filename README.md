@@ -1,7 +1,7 @@
 # 2023-CFTNet-Complex-valued-Frequency-Transformation-Network-for-Speech-Enhancement
 
 
-# ******************* Network-1: CFTNet ******************
+# ******************* CFTNet ******************
  Complex-valued Frequency Transformation Network for Speech Enhancement
  Authors: Nursadul Mamun, John H.L. Hansen “CFTNet: Complex-valued frequency transformation
  network for speech enhancement, INTERSPEECH, Dublin, Ireland, 2023.
