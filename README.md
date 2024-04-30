@@ -32,7 +32,7 @@ structures in the frequency components.
 
 
 
-                            ![CFTNet_Network_Overview](https://github.com/nursad49/2023-CFTNet-Complex-valued-Frequency-Transformation-Network-for-Speech-Enhancement/assets/45471274/da66e6e2-ba39-434d-8f1e-bdd2cdf4ef2c)
+![CFTNet_Network_Overview](https://github.com/nursad49/2023-CFTNet-Complex-valued-Frequency-Transformation-Network-for-Speech-Enhancement/assets/45471274/bb8c451b-2a6b-4c9c-b1fb-782be8232157)
 
 
 
